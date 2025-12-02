@@ -1,28 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-int number1;
-    int number2;
-    printf("Please enter number1\n");
-    scanf("%d", &number1);
-    printf("Please enter number2\n");
-    scanf("%d", &number2);
-    if (number1 == number2)
-        printf("%i = %i\n",number1 , number2);
+char a ;
+ printf ("do you agree?\n");
+scanf("%c", &a);
+ if (a=='y' || a=='Y') {
+  printf("you agreed\n");
+ }
+ else if (a=='n'|| a=='N') {
+  printf("you not agree!");
+ }
+ else {
+  printf("error please enter y/n");
+ }
 
 
-    else {
-        if (number1 > number2)
-            printf("%i > %i\n",number1 ,number2);
 
-        else {
-            if (number1 < number2)
-                printf("%i < %i \n" , number1 , number2);
-
-        }
-    }
-    return 0;
 
 }
-
-
